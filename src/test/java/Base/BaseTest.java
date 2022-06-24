@@ -1,9 +1,6 @@
 package Base;
 
-import Pages.HomePage;
-import Pages.RadioButtonPage;
-import Pages.Sidebar;
-import Pages.TextBoxPage;
+import Pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +27,9 @@ public class BaseTest {
     public TextBoxPage textBoxPage;
     public RadioButtonPage radioButtonPage;
 
+     public ButtonsPage buttonsPage;
+     public LinksPage linksPage;
+
 
     //-------------------------------------
 
@@ -50,6 +50,9 @@ public class BaseTest {
         sidebar = new Sidebar(driver, wdwait);
         textBoxPage = new TextBoxPage(driver, wdwait);
         radioButtonPage= new RadioButtonPage(driver,wdwait);
+        buttonsPage = new ButtonsPage(driver, wdwait);
+        linksPage= new LinksPage(driver, wdwait);
+
 
         //-----------------------------------------------------------------------------
 

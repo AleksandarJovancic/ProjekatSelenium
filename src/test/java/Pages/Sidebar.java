@@ -9,6 +9,7 @@ public class Sidebar {
 
     WebDriver driver;
     WebDriverWait wdwait;
+
 //padajuca polja iz Sidebara za Elements
     WebElement elements;
     WebElement textBox;
@@ -43,11 +44,21 @@ public class Sidebar {
     }
 
     public WebElement getRadioButton() {
-        return driver.findElement(By.id("item-2"));
+        return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[3]"));
+    }
+
+    public WebElement getButtons() {
+        return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[5]"));
+    }
+
+    public WebElement getLinks() {
+        return driver.findElement(By.id("item-5"));
     }
 
     //--------------------------------------------------------------------
 
+
+     //  metode za izbor elemenata iz padajuceg menija u sidebaru
 
     public void clickOnTextBox(){
         this.getTextBox().click();
@@ -56,6 +67,15 @@ public class Sidebar {
 
     public void clickOnRadioButton(){
         this.getRadioButton().click();
+
+    }
+    public void clickOnButtons(){
+        this.getButtons().click();
+
+    }
+
+    public void clickOnLinks(){
+        this.getLinks().click();
 
     }
 

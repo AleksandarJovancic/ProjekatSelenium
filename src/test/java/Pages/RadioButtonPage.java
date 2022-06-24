@@ -23,7 +23,7 @@ public class RadioButtonPage {
     }
 
     public WebElement getButtonYes() {
-        return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/label"));
+        return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[3]"));
     }
     public WebElement getButtonImpressive() {
         return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/label"));
@@ -41,8 +41,9 @@ public class RadioButtonPage {
         return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/p/span"));
     }
     public WebElement getNotificationImpressive() {
-        return driver.findElement(By.className("mt-3"));
+        return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/p/span"));
     }
+
     public WebElement getNotificationNo() {
         return notificationNo;
     }

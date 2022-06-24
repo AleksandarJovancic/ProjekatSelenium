@@ -16,6 +16,9 @@ public class HomePage {
     WebElement alertFrameWindows;
     WebElement interactions;
     WebElement bookStoreApplication;
+
+    WebElement homeHeadTitle;
+
 //----------------------------------------------
 
     public HomePage(WebDriver driver, WebDriverWait wdwait) {
@@ -27,8 +30,6 @@ public class HomePage {
 
     public WebElement getElementsBox() {
         return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/div[1]"));
-        ///html/body/div[2]/div/div/div[2]/div/div[2]
-       ///html/body/div[2]/div/div/div[2]/div/div[3]
 
     }
 
@@ -54,6 +55,12 @@ public class HomePage {
     public WebElement getBookStoreApplication() {
         return bookStoreApplication;
     }
+
+    public WebElement getHomeHeadTitle() {
+        return driver.findElement(By.xpath("/html/body/div[2]/header/a/img"));
+    }
+
+
     //-----------------------------------------------------------
 
 
